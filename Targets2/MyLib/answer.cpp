@@ -1,6 +1,6 @@
 #include "answer.h"
 
-int MYLIB_NAMESPACE::TheAnswer()
+int MyLib::TheAnswer()
 {
-	return ANSWER;
+	return 42;
 }

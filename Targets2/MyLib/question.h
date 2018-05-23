@@ -2,9 +2,9 @@
 
 #include <string>
 
-namespace MYLIB_NAMESPACE
+namespace MyLib
 {
 
-	std::string TheQuestion();
+	MYLIB_API std::string TheQuestion();
 
 }

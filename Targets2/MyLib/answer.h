@@ -1,6 +1,6 @@
 #pragma once
 
-namespace MYLIB_NAMESPACE
+namespace MyLib
 {
-	int TheAnswer();
+	MYLIB_API int TheAnswer();
 }
