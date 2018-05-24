@@ -1,0 +1,4 @@
+#pragma once
+
+const char *const buildAuthor = "${BUILD_AUTHOR}";
+const char *const buildDate = "${BUILD_DATE}";
