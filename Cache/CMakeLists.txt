@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
+project(Cache)
+
 # settings and options
 
 set(NAME "%username%" CACHE STRING "User name")

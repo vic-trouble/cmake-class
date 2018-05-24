@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
+project(Variables)
+
 set(VAR value)
 message("VAR == ${VAR}")
 
