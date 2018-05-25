@@ -6,3 +6,4 @@ include(config.cmake)
 
 add_subdirectory(MyExe)
 add_subdirectory(MyLib)
+add_subdirectory(MyLoadLibrary)
