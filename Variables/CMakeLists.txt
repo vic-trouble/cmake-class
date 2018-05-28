@@ -5,6 +5,8 @@ project(Variables)
 set(VAR value)
 message("VAR == ${VAR}")
 
+unset(VAR)
+
 set(EMPTY)
 message("EMPTY == ${EMPTY}")
 
