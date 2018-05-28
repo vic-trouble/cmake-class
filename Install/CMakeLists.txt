@@ -12,4 +12,5 @@ install(TARGETS MyFactorial
 		ARCHIVE DESTINATION lib
 		PUBLIC_HEADER DESTINATION include)
 install(FILES headers/factorial.h DESTINATION include/MyFactorial)
+install(FILES cmake/MyFactorialConfig.cmake DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(EXPORT UseMyFactorial DESTINATION cmake)
