@@ -53,3 +53,25 @@ function(PrintReverse)
 endfunction()
 
 PrintReverse(padawan young my HAVE MUST YOU PATIENCE)
+
+################################################################################
+# cmake-style args
+
+function(add_module TARGET_NAME)
+	cmake_parse_arguments(ARG "LINK_ENGINE" "UNITY" "LINK_MODULES;INCLUDE_DIRECTORIES" "${ARGN}")
+	message("adding module ${TARGET_NAME}")
+	message("	unity ${ARG_UNITY}")
+	if(ARG_LINK_ENGINE)
+		message("	link engine")
+	endif()
+	foreach(MODULE ${ARG_LINK_MODULES})
+		message("	link ${MODULE}")
+	endforeach()
+	foreach(INC_DIR ${ARG_INCLUDE_DIRECTORIES})
+		message("	include ${INC_DIR}")
+	endforeach()
+endfunction()
+
+add_module(Engine.Tests LINK_ENGINE UNITY ON)
+add_module(AdvertisingSDK UNITY OFF)
+add_module(AdvertisingSDK.Tests UNITY OFF LINK_MODULES AdvertisingSDK Engine.Tests INCLUDE_DIRECTORIES CommonInclude)
