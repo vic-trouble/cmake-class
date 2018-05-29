@@ -1,1 +1,0 @@
-find_package(Clang REQUIRED)
