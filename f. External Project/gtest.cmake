@@ -15,3 +15,5 @@ add_library(gtest INTERFACE)
 set_property(TARGET gtest PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${GTEST_INCLUDE_DIR})
 set_property(TARGET gtest PROPERTY INTERFACE_LINK_LIBRARIES ${GTEST_LIB_DIR}/gtest.lib)
 set_property(TARGET gtest APPEND PROPERTY INTERFACE_LINK_LIBRARIES ${GTEST_LIB_DIR}/gmock.lib)
+
+add_dependencies(gtest EP-gtest)
